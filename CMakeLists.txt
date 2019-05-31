@@ -6,6 +6,8 @@ set(QUICK_START_VERSION_MINOR 0)
 set(SOURCES ${PROJECT_SOURCE_DIR}/src/QuickStart.cpp)
 
 include_directories("${PROJECT_SOURCE_DIR}/include")
+include_directories("${PROJECT_SOURCE_DIR}/BullCowGame")
+add_executable(main ${PROJECT_SOURCE_DIR}/BullCowGame/main.cpp)
 add_library(QuickStart STATIC ${SOURCES})
 enable_testing()
 
